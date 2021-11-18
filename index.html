@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Icones -->
     <script src="https://kit.fontawesome.com/2d00da5fd1.js" crossorigin="anonymous"></script>
+    <!-- Font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Booki planifier ses vacances</title>
 </head>
 <body>
     <div id="bloc_page">
-        <header>
+        <!-- HEADER -->
+        <header id="top">
             <!-- Bloc 1 -->
-            <div><img src="assets/logo/Booki.png" alt="Logo Booki"></div>
+            <div>
+                <a href="index.html"><img id="logo" src="assets/logo/Booki.png" alt="Logo Booki"></a>
+            </div>
             <!-- Bloc 2 -->
             <nav>
                 <ul>
@@ -21,23 +30,26 @@
                 </ul>
             </nav>
         </header>
+        <!-- MAIN -->
         <main>
-            <div>
+            <!-- SEARCH -->
+            <section id="search">
                 <!-- Bloc 1 -->
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <header>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </header>
                 <!-- Bloc 2 -->
-                <p>En plein centre ville ou en pleine nature</p>
-                <!-- Bloc 3 -->
-                <form>
+                <form class="search_form" action="#" method="post">
                     <!-- Bloc 1 -->
-                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="search_icon"><i class="fas fa-map-marker-alt"></i></span>
                     <!-- Bloc 2 -->
-                    <input type="search" id="search_tool" name="search_tool" placeholder="Marseille, France">
+                    <input type="search" id="search_input" name="search_tool" placeholder="Marseille, France">
                     <!-- Bloc 3 -->
-                    <button type="submit">Rechercher</button>
+                    <button class="search_Btn"type="submit">Rechercher</button>
                 </form>
                 <!-- Bloc 4 -->
-                <div>
+                <div class="search_filters">
                     <!-- Bloc 1 -->
                     <h2>Filtres</h2>
                     <!-- Bloc 2 -->
@@ -50,13 +62,13 @@
                 </div>
                 <!-- Bloc 5 -->
                 <div><p><i class="fas fa-info-circle"> Plus de 500 logements sont disponibles dans cette ville</i></p></div>
-            </div>
-                
-            <section>
+            </section>
+            <!-- ACCOMODATION --> 
+            <div id="accomodation_container">
                 <!-- Bloc 1 -->
-                <article>
+                <section id="accomodation_at">
                     <!-- Bloc 1 -->
-                    <h2>Hébergements à <span class="location">Marseille</span></h2>
+                    <h1>Hébergements à <span class="location">Marseille</span></h1>
                     <!-- Bloc 2 --> 
                     <div>
                         <!-- Bloc 1 -->
@@ -66,7 +78,7 @@
                                     <!-- Bloc 1 -->
                                     <div><img src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre Auberge La Cannebière"></div>
                                     <!-- Bloc 2 -->
-                                    <h3>Auberge La Cannebière</h3>
+                                    <h2>Auberge La Cannebière</h2>
                                     <!-- Bloc 3 -->
                                     <p>Nuit à partir de 25€</p>
                                     <!-- Bloc 1 -->
@@ -87,7 +99,7 @@
                                     <!-- Bloc 1 -->
                                     <div><img src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre Hotel du port"></div>
                                     <!-- Bloc 2 -->
-                                    <h3>Hôtel du port</h3>
+                                    <h2>Hôtel du port</h2>
                                     <!-- Bloc 3 -->
                                     <p>Nuit à partir de 52€</p>
                                     <!-- Bloc 4 -->
@@ -108,7 +120,7 @@
                                     <!-- Bloc 1 -->
                                     <div><img src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre Hotel Les mouettes"></div>
                                     <!-- Bloc 2 -->
-                                    <h3>Hôtel Les mouettes</h3>
+                                    <h2>Hôtel Les mouettes</h2>
                                     <!-- Bloc 3 -->
                                     <p>Nuit à partir de 76€</p>
                                     <!-- Bloc 4 -->
@@ -132,7 +144,7 @@
                                     <!-- Bloc 1 -->
                                     <div><img src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre Hôtel de la mer"></div>
                                     <!-- Bloc 2 -->
-                                    <h3>Hôtel de la mer</h3>
+                                    <h2>Hôtel de la mer</h2>
                                     <!-- Bloc 3 -->
                                     <p>Nuit à partir de 46€</p>
                                     <!-- Bloc 4 -->
@@ -153,7 +165,7 @@
                                     <!-- Bloc 1 -->
                                     <div><img src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre Auberge Le Panier"></div>
                                     <!-- Bloc 2 -->
-                                    <h3>Auberge Le Panier</h3>
+                                    <h2>Auberge Le Panier</h2>
                                     <!-- Bloc 3 -->
                                     <p>Nuit à partir de 23€</p>
                                     <!-- Bloc 4 -->
@@ -174,7 +186,7 @@
                                     <!-- Bloc 1 -->
                                     <div><img src="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre Hôtel chez Amina"></div>
                                     <!-- Bloc 2 -->
-                                    <h3>Hôtel chez Amina</h3>
+                                    <h2>Hôtel chez Amina</h2>
                                     <!-- Bloc 3 -->
                                     <p>Nuit à partir de 96€</p>
                                     <!-- Bloc 4 -->
@@ -191,11 +203,11 @@
                     </div>
                     <!-- Bloc 4 -->
                     <button>Afficher plus</button>          
-                </article>
+                </section>
                 <!-- Bloc 2 -->
-                <article>
+                <section id="more_popular">
                     <!-- Bloc 1 -->
-                    <h2>Les plus populaires</h2>
+                    <h1>Les plus populaires</h1>
                     <!-- Bloc 2 -->
                     <div>
                         <a href="#">
@@ -205,7 +217,7 @@
                                 <!-- Bloc 2 -->
                                 <div>
                                     <!-- Bloc 1 -->
-                                    <h3>Hôtel du soleil matin</h3>
+                                    <h2>Hôtel du soleil matin</h2>
                                     <!-- Bloc 2 -->
                                     <p>Nuit à partir de 128€</p>
                                     <!-- Bloc 3 -->
@@ -229,7 +241,7 @@
                                 <!-- Bloc 2 -->
                                 <div>
                                     <!-- Bloc 1 -->
-                                    <h3>Au coeur de l'eau Chambre d'hôtes</h3>
+                                    <h2>Au coeur de l'eau Chambre d'hôtes</h2>
                                     <!-- Bloc 2 -->
                                     <p>Nuit à partir de 71€</p>
                                     <!-- Bloc 3 -->
@@ -253,7 +265,7 @@
                                 <!-- Bloc 2 -->
                                 <div>
                                     <!-- Bloc 1 -->
-                                    <h3>Hôtel Tout bleu et Blanc</h3>
+                                    <h2>Hôtel Tout bleu et Blanc</h2>
                                     <!-- Bloc 2 -->
                                     <p>Nuit à partir de 68€</p>
                                     <!-- Bloc 3 -->
@@ -268,10 +280,10 @@
                             </div>
                         </a>
                     </div>
-                </article>
-            </section>
-                
-            <section>
+                </section>
+            </div>
+            <!-- ACTIVITY -->   
+            <section id="activity">
                 <!-- Bloc 1 -->
                 <div><h2>Activité à <span>Marseille</span></h2></div>
                 <!-- Bloc 2 -->
@@ -283,7 +295,7 @@
                                 <!-- Bloc 1 -->
                                 <div><img src="assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Le Vieux Port de Marseille"></div>
                                 <!-- Bloc 2 -->
-                                <h3>Vieux Port</h3>
+                                <h2>Vieux Port</h2>
                             </div>
                         </a>
                     </div>
@@ -296,14 +308,14 @@
                                     <!-- Bloc 1 -->
                                     <div><img src="assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de pomègues"></div>
                                     <!-- Bloc 2 -->
-                                    <h3>Fort de pomègues</h3>
+                                    <h2>Fort de pomègues</h2>
                                 </div>
                                 <!-- Bloc 2 -->
                                 <div>
                                     <!-- Bloc 1 -->
                                     <div><img src="assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"></div>
                                     <!-- Bloc 2 -->
-                                    <h3>Îles du Frioul</h3>
+                                    <h2>Îles du Frioul</h2>
                                 </div>
                             </div>
                         </a>
@@ -315,7 +327,7 @@
                                 <!-- Bloc 1 -->
                                 <div><img src="assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Le parc national des calanques"></div>
                                 <!-- Bloc 2 -->
-                                <h3>Parc National des calanques</h3>
+                                <h2>Parc National des calanques</h2>
                             </div>
                         </a>
                     </div>
@@ -328,14 +340,14 @@
                                     <!-- Bloc 1 -->
                                     <div><img src="assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"></div>
                                     <!-- Bloc 2 -->
-                                    <h3>Notre-Dame-de-la-Garde</h3>
+                                    <h2>Notre-Dame-de-la-Garde</h2>
                                 </div>
                                 <!-- Bloc 2 -->
                                 <div>
                                     <!-- Bloc 1 -->
                                     <div><img src="assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt=" Le parc Lonchamp"></div>
                                     <!-- Bloc 2 -->
-                                    <h3>Parc Longchamp</h3>
+                                    <h2>Parc Longchamp</h2>
                                 </div>
                             </div>
                         </a>
@@ -343,7 +355,7 @@
                 </div>     
             </section>
         </main>
-        <!-- Footer -->
+        <!-- FOOTER -->
         <footer>
             <!-- Bloc 1 -->
             <div class="infos_footer">

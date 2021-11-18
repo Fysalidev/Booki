@@ -1,0 +1,88 @@
+/* STYLE PRINCIPAUX */
+*
+{
+    margin: 0px;
+    padding: 0px;  
+}
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+#bloc_page
+{
+    width: 992px;
+    margin: auto;
+}
+
+main{
+    margin-top: 15px;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h1
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+p
+{
+font-size: 0.8em;
+}
+/* HEADER */
+#top
+{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#logo
+{
+    width: 96px;
+    height: 45px;
+}
+/* Navigation */
+nav ul
+{
+    display: flex;
+}
+
+nav li
+{
+    padding:15px;
+    list-style: none;
+    text-align: center;
+
+}
+nav li a
+{
+    padding:15px;
+    color: black;
+}
+
+nav li a:hover
+{
+    color: #0065FC;
+    border-top: solid;
+}
+
+
