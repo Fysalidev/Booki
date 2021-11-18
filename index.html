@@ -1,388 +1,503 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/2d00da5fd1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Icones -->
-    <script src="https://kit.fontawesome.com/2d00da5fd1.js" crossorigin="anonymous"></script>
-    <!-- Font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Booki planifier ses vacances</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="bloc_page">
-        <!-- HEADER -->
-        <header id="top">
-            <!-- Bloc 1 -->
+      <!-- HEADER -->
+      <header id="top">
+        <!-- HEADER - Logo -->
+        <div>
+          <a href="index.html"
+            ><img id="logo" src="assets/logo/Booki.png" alt="Logo Booki"
+          /></a>
+        </div>
+        <!-- HEADER Nav -->
+        <nav>
+          <ul>
+            <li><a href="#accomodation_at">Hébergements</a></li>
+            <li><a href="#activity">Activités</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- MAIN -->
+      <main>
+        <!-- SEARCH -->
+        <section id="search">
+          <!-- SEARCH - Header -->
+          <header>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+          </header>
+          <!-- SEARCH - Form -->
+          <form id="search_form" action="#" method="post">
+            <div id="search_icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
             <div>
-                <a href="index.html"><img id="logo" src="assets/logo/Booki.png" alt="Logo Booki"></a>
+              <input
+                type="search"
+                id="search_input"
+                name="search_tool"
+                placeholder="Marseille, France"
+              />
             </div>
-            <!-- Bloc 2 -->
-            <nav>
-                <ul>
-                    <li><a href="#accomodation_at">Hébergements</a></li>
-                    <li><a href="#activity">Activités</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- MAIN -->
-        <main>
-            <!-- SEARCH -->
-            <section id="search">
-                <!-- Bloc 1 -->
-                <header>
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                </header>
-                <!-- Bloc 2 -->
-                <form class="search_form" action="#" method="post">
-                    <!-- Bloc 1 -->
-                    <span class="search_icon"><i class="fas fa-map-marker-alt"></i></span>
-                    <!-- Bloc 2 -->
-                    <input type="search" id="search_input" name="search_tool" placeholder="Marseille, France">
-                    <!-- Bloc 3 -->
-                    <button class="search_Btn"type="submit">Rechercher</button>
-                </form>
-                <!-- Bloc 4 -->
-                <div class="search_filters">
-                    <!-- Bloc 1 -->
-                    <h2>Filtres</h2>
-                    <!-- Bloc 2 -->
-                    <div>
-                        <button class="filter_btn"><i class="fas fa-money-bill-wave"> Économique</i></button>
-                        <button class="filter_btn"><i class="fas fa-child"> Familial</i></button>
-                        <button class="filter_btn"><i class="fas fa-heart"> Romantique</i></button>
-                        <button class="filter_btn"><i class="fas fa-dog"> Animaux autorisés</i></button>
-                    </div>
-                </div>
-                <!-- Bloc 5 -->
-                <div><p><i class="fas fa-info-circle"> Plus de 500 logements sont disponibles dans cette ville</i></p></div>
-            </section>
-            <!-- ACCOMODATION --> 
-            <div id="accomodation_container">
-                <!-- Bloc 1 -->
-                <section id="accomodation_at">
-                    <!-- Bloc 1 -->
-                    <h1>Hébergements à <span class="location">Marseille</span></h1>
-                    <!-- Bloc 2 --> 
-                    <div>
-                        <!-- Bloc 1 -->
-                        <div>
-                            <a href="#">
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <div><img src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre Auberge La Cannebière"></div>
-                                    <!-- Bloc 2 -->
-                                    <h2>Auberge La Cannebière</h2>
-                                    <!-- Bloc 3 -->
-                                    <p>Nuit à partir de 25€</p>
-                                    <!-- Bloc 1 -->
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </div>
-                            </a> 
-                        </div>
-                        <!-- Bloc 2 -->
-                        <div>
-                            <a href="#">
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <div><img src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre Hotel du port"></div>
-                                    <!-- Bloc 2 -->
-                                    <h2>Hôtel du port</h2>
-                                    <!-- Bloc 3 -->
-                                    <p>Nuit à partir de 52€</p>
-                                    <!-- Bloc 4 -->
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Bloc 3 -->
-                        <div>
-                            <a href="#">
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <div><img src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre Hotel Les mouettes"></div>
-                                    <!-- Bloc 2 -->
-                                    <h2>Hôtel Les mouettes</h2>
-                                    <!-- Bloc 3 -->
-                                    <p>Nuit à partir de 76€</p>
-                                    <!-- Bloc 4 -->
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Bloc 3 -->
-                    <div>
-                        <!-- Bloc 1 -->
-                        <div>
-                            <a href="#">
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <div><img src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre Hôtel de la mer"></div>
-                                    <!-- Bloc 2 -->
-                                    <h2>Hôtel de la mer</h2>
-                                    <!-- Bloc 3 -->
-                                    <p>Nuit à partir de 46€</p>
-                                    <!-- Bloc 4 -->
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Bloc 2 -->
-                        <div>
-                            <a href="#">
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <div><img src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre Auberge Le Panier"></div>
-                                    <!-- Bloc 2 -->
-                                    <h2>Auberge Le Panier</h2>
-                                    <!-- Bloc 3 -->
-                                    <p>Nuit à partir de 23€</p>
-                                    <!-- Bloc 4 -->
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- Bloc 3 -->
-                        <div>
-                            <a href="#">
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <div><img src="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre Hôtel chez Amina"></div>
-                                    <!-- Bloc 2 -->
-                                    <h2>Hôtel chez Amina</h2>
-                                    <!-- Bloc 3 -->
-                                    <p>Nuit à partir de 96€</p>
-                                    <!-- Bloc 4 -->
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Bloc 4 -->
-                    <button>Afficher plus</button>          
-                </section>
-                <!-- Bloc 2 -->
-                <section id="more_popular">
-                    <!-- Bloc 1 -->
-                    <h1>Les plus populaires</h1>
-                    <!-- Bloc 2 -->
-                    <div>
-                        <a href="#">
-                            <div>
-                                <!-- Bloc 1 -->
-                                <div><img src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre Hôtel du soleil matin"></div>
-                                <!-- Bloc 2 -->
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <h2>Hôtel du soleil matin</h2>
-                                    <!-- Bloc 2 -->
-                                    <p>Nuit à partir de 128€</p>
-                                    <!-- Bloc 3 -->
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Bloc 3 -->
-                    <div>
-                        <a href="#">
-                            <div>
-                                <!-- Bloc 1 -->
-                                <div><img src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre Au coeur de l'eau chambre d'hôtes"></div>
-                                <!-- Bloc 2 -->
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <h2>Au coeur de l'eau Chambre d'hôtes</h2>
-                                    <!-- Bloc 2 -->
-                                    <p>Nuit à partir de 71€</p>
-                                    <!-- Bloc 3 -->
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Bloc 4 -->
-                    <div>
-                        <a href="#">
-                            <div>
-                                <!-- Bloc 1 -->
-                                <div><img src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre Hôtel Tout bleu et blanc"></div>
-                                <!-- Bloc 2 -->
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <h2>Hôtel Tout bleu et Blanc</h2>
-                                    <!-- Bloc 2 -->
-                                    <p>Nuit à partir de 68€</p>
-                                    <!-- Bloc 3 -->
-                                    <p>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </section>
+            <div>
+              <button id="search_Btn" type="submit">Rechercher</button>
             </div>
-            <!-- ACTIVITY -->   
-            <section id="activity">
-                <!-- Bloc 1 -->
-                <div><h2>Activité à <span>Marseille</span></h2></div>
-                <!-- Bloc 2 -->
-                <div>
-                    <!-- Bloc 1 -->
-                    <div>
-                        <a href="#">
-                            <div>
-                                <!-- Bloc 1 -->
-                                <div><img src="assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Le Vieux Port de Marseille"></div>
-                                <!-- Bloc 2 -->
-                                <h2>Vieux Port</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Bloc 2 -->
-                    <div>
-                        <a href="#">
-                            <div>
-                                <!-- Bloc 1 -->
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <div><img src="assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de pomègues"></div>
-                                    <!-- Bloc 2 -->
-                                    <h2>Fort de pomègues</h2>
-                                </div>
-                                <!-- Bloc 2 -->
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <div><img src="assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"></div>
-                                    <!-- Bloc 2 -->
-                                    <h2>Îles du Frioul</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Bloc 3 -->
-                    <div>
-                        <a href="#">
-                            <div>
-                                <!-- Bloc 1 -->
-                                <div><img src="assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Le parc national des calanques"></div>
-                                <!-- Bloc 2 -->
-                                <h2>Parc National des calanques</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Bloc 4 -->
-                    <div>
-                        <a href="#">
-                            <div>
-                                <!-- Bloc 1 -->
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <div><img src="assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"></div>
-                                    <!-- Bloc 2 -->
-                                    <h2>Notre-Dame-de-la-Garde</h2>
-                                </div>
-                                <!-- Bloc 2 -->
-                                <div>
-                                    <!-- Bloc 1 -->
-                                    <div><img src="assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt=" Le parc Lonchamp"></div>
-                                    <!-- Bloc 2 -->
-                                    <h2>Parc Longchamp</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>     
-            </section>
-        </main>
-        <!-- FOOTER -->
-        <footer>
+          </form>
+          <!-- SEARCH - Filters -->
+          <div id="bloc_filters">
+            <div>
+              <h2>Filtres</h2>
+            </div>
+            <div id="bloc_filters_btn">
+              <div>
+                <button class="filter_btn">
+                  <i class="fas fa-money-bill-wave"> Économique</i>
+                </button>
+              </div>
+              <div>
+                <button class="filter_btn">
+                  <i class="fas fa-child"> Familial</i>
+                </button>
+              </div>
+              <div>
+                <button class="filter_btn">
+                  <i class="fas fa-heart"> Romantique</i>
+                </button>
+              </div>
+              <div>
+                <button class="filter_btn">
+                  <i class="fas fa-dog"> Animaux autorisés</i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>
+              <i class="fas fa-info-circle"
+                >Plus de 500 logements sont disponibles dans cette ville</i
+              >
+            </p>
+          </div>
+        </section>
+        <!-- ACCOMODATION -->
+        <div id="accomodation_container">
+          <!-- Bloc 1 -->
+          <section id="accomodation_at">
             <!-- Bloc 1 -->
-            <div class="infos_footer">
-                <h2>A propos</h2>
-                <ul>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Conditions générales de vente</a></li>
-                    <li><a href="#">Données et confidentialité</a></li>
-                </ul>
-            </div>
+            <h1>Hébergements à <span class="location">Marseille</span></h1>
             <!-- Bloc 2 -->
-            <div class="infos_footer">
-               <h2>Nos hébergements</h2>
-                <ul>
-                    <li><a href="#">Charte qualité</a></li>
-                    <li><a href="#">Soumettre votre hôtel</a></li>
-                </ul> 
+            <div>
+              <!-- Bloc 1 -->
+              <div>
+                <a href="#">
+                  <div>
+                    <!-- Bloc 1 -->
+                    <div>
+                      <img
+                        src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="Chambre Auberge La Cannebière"
+                      />
+                    </div>
+                    <!-- Bloc 2 -->
+                    <h2>Auberge La Cannebière</h2>
+                    <!-- Bloc 3 -->
+                    <p>Nuit à partir de 25€</p>
+                    <!-- Bloc 1 -->
+                    <p>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <!-- Bloc 2 -->
+              <div>
+                <a href="#">
+                  <div>
+                    <!-- Bloc 1 -->
+                    <div>
+                      <img
+                        src="assets/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                        alt="Chambre Hotel du port"
+                      />
+                    </div>
+                    <!-- Bloc 2 -->
+                    <h2>Hôtel du port</h2>
+                    <!-- Bloc 3 -->
+                    <p>Nuit à partir de 52€</p>
+                    <!-- Bloc 4 -->
+                    <p>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <!-- Bloc 3 -->
+              <div>
+                <a href="#">
+                  <div>
+                    <!-- Bloc 1 -->
+                    <div>
+                      <img
+                        src="assets/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        alt="Chambre Hotel Les mouettes"
+                      />
+                    </div>
+                    <!-- Bloc 2 -->
+                    <h2>Hôtel Les mouettes</h2>
+                    <!-- Bloc 3 -->
+                    <p>Nuit à partir de 76€</p>
+                    <!-- Bloc 4 -->
+                    <p>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
             <!-- Bloc 3 -->
-            <div class="infos_footer">
-                <h2>Assistance</h2>
-                <ul>
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Nous contacter</a></li>
-                </ul> 
+            <div>
+              <!-- Bloc 1 -->
+              <div>
+                <a href="#">
+                  <div>
+                    <!-- Bloc 1 -->
+                    <div>
+                      <img
+                        src="assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                        alt="Chambre Hôtel de la mer"
+                      />
+                    </div>
+                    <!-- Bloc 2 -->
+                    <h2>Hôtel de la mer</h2>
+                    <!-- Bloc 3 -->
+                    <p>Nuit à partir de 46€</p>
+                    <!-- Bloc 4 -->
+                    <p>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <!-- Bloc 2 -->
+              <div>
+                <a href="#">
+                  <div>
+                    <!-- Bloc 1 -->
+                    <div>
+                      <img
+                        src="assets/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                        alt="Chambre Auberge Le Panier"
+                      />
+                    </div>
+                    <!-- Bloc 2 -->
+                    <h2>Auberge Le Panier</h2>
+                    <!-- Bloc 3 -->
+                    <p>Nuit à partir de 23€</p>
+                    <!-- Bloc 4 -->
+                    <p>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <!-- Bloc 3 -->
+              <div>
+                <a href="#">
+                  <div>
+                    <!-- Bloc 1 -->
+                    <div>
+                      <img
+                        src="assets/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                        alt="Chambre Hôtel chez Amina"
+                      />
+                    </div>
+                    <!-- Bloc 2 -->
+                    <h2>Hôtel chez Amina</h2>
+                    <!-- Bloc 3 -->
+                    <p>Nuit à partir de 96€</p>
+                    <!-- Bloc 4 -->
+                    <p>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
-        </footer>
+            <!-- Bloc 4 -->
+            <button>Afficher plus</button>
+          </section>
+          <!-- Bloc 2 -->
+          <section id="more_popular">
+            <!-- Bloc 1 -->
+            <h1>Les plus populaires</h1>
+            <!-- Bloc 2 -->
+            <div>
+              <a href="#">
+                <div>
+                  <!-- Bloc 1 -->
+                  <div>
+                    <img
+                      src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                      alt="Chambre Hôtel du soleil matin"
+                    />
+                  </div>
+                  <!-- Bloc 2 -->
+                  <div>
+                    <!-- Bloc 1 -->
+                    <h2>Hôtel du soleil matin</h2>
+                    <!-- Bloc 2 -->
+                    <p>Nuit à partir de 128€</p>
+                    <!-- Bloc 3 -->
+                    <p>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Bloc 3 -->
+            <div>
+              <a href="#">
+                <div>
+                  <!-- Bloc 1 -->
+                  <div>
+                    <img
+                      src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                      alt="Chambre Au coeur de l'eau chambre d'hôtes"
+                    />
+                  </div>
+                  <!-- Bloc 2 -->
+                  <div>
+                    <!-- Bloc 1 -->
+                    <h2>Au coeur de l'eau Chambre d'hôtes</h2>
+                    <!-- Bloc 2 -->
+                    <p>Nuit à partir de 71€</p>
+                    <!-- Bloc 3 -->
+                    <p>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Bloc 4 -->
+            <div>
+              <a href="#">
+                <div>
+                  <!-- Bloc 1 -->
+                  <div>
+                    <img
+                      src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                      alt="Chambre Hôtel Tout bleu et blanc"
+                    />
+                  </div>
+                  <!-- Bloc 2 -->
+                  <div>
+                    <!-- Bloc 1 -->
+                    <h2>Hôtel Tout bleu et Blanc</h2>
+                    <!-- Bloc 2 -->
+                    <p>Nuit à partir de 68€</p>
+                    <!-- Bloc 3 -->
+                    <p>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+        </div>
+        <!-- ACTIVITY -->
+        <section id="activity">
+          <!-- Bloc 1 -->
+          <div>
+            <h2>Activité à <span>Marseille</span></h2>
+          </div>
+          <!-- Bloc 2 -->
+          <div>
+            <!-- Bloc 1 -->
+            <div>
+              <a href="#">
+                <div>
+                  <!-- Bloc 1 -->
+                  <div>
+                    <img
+                      src="assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                      alt="Le Vieux Port de Marseille"
+                    />
+                  </div>
+                  <!-- Bloc 2 -->
+                  <h2>Vieux Port</h2>
+                </div>
+              </a>
+            </div>
+            <!-- Bloc 2 -->
+            <div>
+              <a href="#">
+                <div>
+                  <!-- Bloc 1 -->
+                  <div>
+                    <!-- Bloc 1 -->
+                    <div>
+                      <img
+                        src="assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                        alt="Fort de pomègues"
+                      />
+                    </div>
+                    <!-- Bloc 2 -->
+                    <h2>Fort de pomègues</h2>
+                  </div>
+                  <!-- Bloc 2 -->
+                  <div>
+                    <!-- Bloc 1 -->
+                    <div>
+                      <img
+                        src="assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                        alt="Îles du Frioul"
+                      />
+                    </div>
+                    <!-- Bloc 2 -->
+                    <h2>Îles du Frioul</h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Bloc 3 -->
+            <div>
+              <a href="#">
+                <div>
+                  <!-- Bloc 1 -->
+                  <div>
+                    <img
+                      src="assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                      alt="Le parc national des calanques"
+                    />
+                  </div>
+                  <!-- Bloc 2 -->
+                  <h2>Parc National des calanques</h2>
+                </div>
+              </a>
+            </div>
+            <!-- Bloc 4 -->
+            <div>
+              <a href="#">
+                <div>
+                  <!-- Bloc 1 -->
+                  <div>
+                    <!-- Bloc 1 -->
+                    <div>
+                      <img
+                        src="assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                        alt="Notre-Dame-de-la-Garde"
+                      />
+                    </div>
+                    <!-- Bloc 2 -->
+                    <h2>Notre-Dame-de-la-Garde</h2>
+                  </div>
+                  <!-- Bloc 2 -->
+                  <div>
+                    <!-- Bloc 1 -->
+                    <div>
+                      <img
+                        src="assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                        alt=" Le parc Lonchamp"
+                      />
+                    </div>
+                    <!-- Bloc 2 -->
+                    <h2>Parc Longchamp</h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- FOOTER -->
+      <footer>
+        <!-- Bloc 1 -->
+        <div class="infos_footer">
+          <h2>A propos</h2>
+          <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+          </ul>
+        </div>
+        <!-- Bloc 2 -->
+        <div class="infos_footer">
+          <h2>Nos hébergements</h2>
+          <ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+          </ul>
+        </div>
+        <!-- Bloc 3 -->
+        <div class="infos_footer">
+          <h2>Assistance</h2>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
