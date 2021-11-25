@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: black;
 }
@@ -301,85 +301,100 @@ padding: 0.7rem;
 /* ACTIVITY */
 
 #activity_cards_container{
-  width: 100%;
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
 .activity_cards_bloc{
-  width: 23%;
-  height: 20rem;
+  width: 14rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: solid 1px #f2f2f2;
+  flex-wrap: wrap;
 }
 
-.activity_card {
-  max-height: 30rem;
+.activity_card_xl {
+  height: 100%;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
   border-radius: 1rem;
   overflow: hidden;
 }
 
-.activity_img_xl {
-height: 85%;
-object-fit: cover;
-object-position: 50% 50%;
-}
-
-.activity_img_l{
-
-}
-
-.activity_img_m {
-width: 15rem;
-height: 2rem;
-object-fit: cover;
-}
-
-.activity_img_s {
-width: 1rem;
-object-fit: cover;
-
-}
-
-
-/* .activity_container_2{
-  width: 23%;
-  box-shadow: 5px 5px 5px #f2f2f2;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-} */
-
-/* .activity_card_1 img {
-  max-width: 100%;
-  min-height: 18rem;
+.activity_card_xl img{
+  width: 100%;
+  min-height: 89%;
   object-fit: cover;
-  
 }
 
-.activity_card_3 img {
-width: 100%;
-max-height: 9rem;
-border-radius: 1rem 1rem 0rem 0rem;
-object-fit: cover;
-border-radius: 1rem;
+.activity_card_xl h3 {
+padding-left: 0.5rem;
+}
+
+.activity_card_l {
+  height : 14rem;
+  border: solid 1px #f2f2f2;
+  box-shadow: 5px 5px 5px #f2f2f2;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity_card_l img{
+  width: 100%;
+  min-height: 1rem;
+  object-fit: cover;
 
 }
 
-.activity_card_3 img {
-width: 100%;
-max-height: 9rem;
-border-radius: 1rem 1rem 0rem 0rem;
-object-fit: cover; */
+.activity_card_l h3 {
+  padding-left: 0.5rem;
+}
 
+.activity_card_m {
+  height : 11rem;
+  border: solid 1px #f2f2f2;
+  box-shadow: 5px 5px 5px #f2f2f2;
+  border-radius: 1rem;
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.activity_card_m img{
+  width: 14rem;
+  min-height: 4rem;
+  object-fit: cover;
+}
+
+.activity_card_m h3 {
+  padding-left: 0.5rem;
+}
+
+.activity_card_s {
+  height : 9rem;
+  border: solid 1px #f2f2f2;
+  box-shadow: 5px 5px 5px #f2f2f2;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.activity_card_s img{
+  width: 14rem;
+  min-height: 4rem;
+}
+
+.activity_card_s h3 {
+  padding-left: 0.5rem;
+}
 
 /* FOOTER */
 
