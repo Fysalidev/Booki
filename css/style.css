@@ -149,7 +149,7 @@ nav li a:hover {
   align-items: center;
   max-width: 12rem;
   margin-left: 1rem;
-  border: solid 1px #deebff;
+  border: solid 2px #f2f2f2;
   border-radius: 25px;
   overflow: hidden;
 }
@@ -173,6 +173,25 @@ nav li a:hover {
   padding-right: 5px;
 }
 
+.search_info {
+  max-width: 23rem;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+}
+
+.fa-info {
+  width: 1.2rem;
+  height: 1.2rem;
+  color:#006#5fc;
+  font-size:0.6rem;
+  border-radius: 100vh;
+  border:solid 2px #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ACCOMODATION */
 #accomodation_container {
   width: 100%;
@@ -183,7 +202,7 @@ nav li a:hover {
 /* ACCOMODATION | Hébergement à Marseille */
 
 #accomodation_at {
-  width: 66%;
+  width: 64%;
   background-color: #f2f2f2;
   border-radius: 1rem;
   padding: 0.5rem;
@@ -194,7 +213,10 @@ padding-left: 1.5rem;
 }
 
 .bloc_title {
-  margin-bottom: 0.5rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 0.5rem; */
 }
 
 .accomodation_cards_container {
@@ -240,14 +262,10 @@ padding-left: 1.5rem;
 #more_popular {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 27%;
   background-color: #f2f2f2;
   border-radius: 1rem;
   padding: 0.5rem;
-}
-
-#more_popular h2{
-  padding-left: 1.5rem;
 }
 
 .more_popular_cards_container {
@@ -390,6 +408,7 @@ padding-left: 0.5rem;
 .activity_card_s img{
   width: 14rem;
   min-height: 4rem;
+  object-fit: cover;
 }
 
 .activity_card_s h3 {
