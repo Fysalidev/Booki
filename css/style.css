@@ -1,6 +1,7 @@
 /* STYLE PRINCIPAUX */
 body {
   font-family: "Raleway", sans-serif;
+  margin: 0px;
 }
 
 #bloc_page {
@@ -9,7 +10,7 @@ body {
 }
 
 main {
-  margin: 1rem 0 0 1rem;
+  /* margin: 1rem 0 0 1rem; */
 }
 
 ul {
@@ -63,7 +64,7 @@ p {
 }
 
 #top a {
-  margin-left: 1rem;
+
 }
 
 #logo {
@@ -171,6 +172,11 @@ nav li a:hover {
   background-color: white;
   font-family: "Raleway";
   font-weight: bold;
+}
+
+.filter_btn button:focus {
+  color: white;
+  background-color: #0065fc;
 }
 
 .filter_btn button:hover{
