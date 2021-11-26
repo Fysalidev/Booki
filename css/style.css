@@ -5,12 +5,12 @@ body {
 }
 
 #bloc_page {
-  width: 992px;
+  /* width: 992px; */
   margin: auto;
 }
 
 main {
-  /* margin: 1rem 0 0 1rem; */
+  margin: 0 2rem;
 }
 
 ul {
@@ -61,11 +61,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 2rem;
 }
 
-#top a {
+/* #top a {
 
-}
+} */
 
 #logo {
   width: 96px;

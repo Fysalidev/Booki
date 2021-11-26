@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px) {
+    #bloc_page {
+        margin: 0;
+        width: 768px
+      }
+    header{
+        flex-direction: column;
+    }
+    header a {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav ul {
+        width: 100%;
+        padding-inline-start: 0px;
+    }
+    header nav ul li{
+        width: 50%;
+    }
+
+    #bloc_filters{
+        flex-wrap: wrap;
+    }
+
+
+    #accomodation_container {
+        flex-direction: column-reverse;
+    }
+    .accomodation_cards_container{
+        flex-direction: column;
+    }
+
+    #accomodation_at{
+        background-color: transparent;
+        width: 100%;
+    }
+
+    #more_popular{
+        border-radius: 0px;
+        width: 100%;
+    }
+}
