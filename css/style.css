@@ -145,27 +145,50 @@ nav li a:hover {
   align-items: center;
   margin: 1rem 0px;
 }
+
+#bloc_filters h2 {
+  margin-right:2rem;
+}
+
 .filters_btn {
   display: flex;
 }
+
 .filter_btn {
+  width: 11rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  max-width: 12rem;
-  margin-left: 1rem;
-  border: solid 2px #f2f2f2;
+  border: solid 1px #f2f2f2;
   border-radius: 25px;
   overflow: hidden;
 }
 
+.filter_btn button {
+  width: 9rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  background-color: white;
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+.filter_btn button:hover{
+  color: white;
+  background-color:#0065fc;
+}
+
 .filter_btn i {
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #0065fc;
   background-color: #deebff;
-  width: 2.5rem;
-  height: 2.5rem;
   border-radius: 100%;
 }
 
