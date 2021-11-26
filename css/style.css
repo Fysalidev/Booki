@@ -146,18 +146,15 @@ nav li a:hover {
   margin: 1rem 0px;
 }
 
-#bloc_filters h2 {
-  margin-right:2rem;
-}
-
 .filters_btn {
+  width: 50rem;
   display: flex;
+  justify-content: space-around;
 }
 
 .filter_btn {
   width: 11rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border: solid 1px #f2f2f2;
   border-radius: 25px;
