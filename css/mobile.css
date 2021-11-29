@@ -1,47 +1,54 @@
 @media screen and (max-width: 768px) {
+  
     #bloc_page {
+        width: 375px;
         margin: 0;
-        width: 768px
-      }
-    header{
+    }
+
+    header {
+        min-width: 100%;
         flex-direction: column;
-    }
-    header a {
-        display: flex;
-        width: 100%;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        margin: 0;
     }
+
     header nav{
-        width: 100%;
+        width:100%; 
     }
+
     header nav ul {
         width: 100%;
-        padding-inline-start: 0px;
+        padding: 0px;
+        justify-content: center;
     }
-    header nav ul li{
+
+    header nav ul li {
         width: 50%;
+        padding: 0px;
+    }
+
+    #search_bar {
+        width: 320px;
+    }
+
+    #search_input {
+        width: 240px;
+    }
+    
+    #search_Btn {
+        width: 40px;
     }
 
     #bloc_filters{
+        justify-content: column;
         flex-wrap: wrap;
     }
 
-
-    #accomodation_container {
-        flex-direction: column-reverse;
-    }
-    .accomodation_cards_container{
-        flex-direction: column;
-    }
-
-    #accomodation_at{
-        background-color: transparent;
+    .filters_btn {
         width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
-    #more_popular{
-        border-radius: 0px;
-        width: 100%;
-    }
 }
