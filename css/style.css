@@ -5,7 +5,7 @@ body {
 }
 
 #bloc_page {
-  /* width: 992px; */
+  width: 1280px;
   margin: auto;
 }
 
@@ -57,7 +57,7 @@ p {
   font-weight: bold;
 }
 /* HEADER */
-#top {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,8 +101,12 @@ nav li a:hover {
   padding-bottom: 1rem;
 }
 
+#search h1 {
+  margin:0rem;
+}
+
 #search_form {
-  margin: 1rem 1rem 1rem 0;
+  margin: 1.5rem 1rem 1.5rem 0;
 }
 
 #search_bar {
@@ -233,7 +237,7 @@ nav li a:hover {
 /* ACCOMODATION | Hébergement à Marseille */
 
 #accomodation_at {
-  width: 62%;
+  width: 63%;
   background-color: #f2f2f2;
   border-radius: 1rem;
   padding: 0.5rem 1.5rem 1.5rem 1.5rem;
@@ -272,7 +276,7 @@ nav li a:hover {
 }
 
 .accomodation_card img {
-  max-height: 6rem;
+  max-height: 7rem;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
@@ -317,7 +321,7 @@ nav li a:hover {
 .popular_card {
   display: flex;
   flex-direction: row;
-  width: 93%;
+  width: 90%;
   height: 26%;
   min-height: 6rem;
   box-shadow: 2px 2px 2px rgb(192, 191, 191);
@@ -362,16 +366,16 @@ nav li a:hover {
 }
 
 .activity_cards_bloc {
-  width: 14rem;
-  height: 25rem;
+  width: 17rem;
+  /* height: 25rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .activity_card_xl {
-  height: 100%;
+  height: 24.9rem;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
   border-radius: 1rem;
@@ -389,7 +393,7 @@ nav li a:hover {
 }
 
 .activity_card_l {
-  height: 14rem;
+  height : auto;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
   border-radius: 1rem;
@@ -400,16 +404,17 @@ nav li a:hover {
 
 .activity_card_l img {
   width: 100%;
-  min-height: 1rem;
+  max-height: 10rem;
   object-fit: cover;
+  object-position: center;
 }
 
 .activity_card_l h3 {
   padding-left: 0.5rem;
 }
 
-.activity_card_m {
-  height: 11rem;
+.activity_card_ma {
+  height: 10rem;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
   border-radius: 1rem;
@@ -419,18 +424,41 @@ nav li a:hover {
   justify-content: space-between;
 }
 
-.activity_card_m img {
-  width: 14rem;
-  min-height: 4rem;
+.activity_card_ma img {
+  width: 100%;
+  min-height: 7.5rem;
   object-fit: cover;
+  object-position: top;
 }
 
-.activity_card_m h3 {
+.activity_card_ma h3 {
+  padding-left: 0.5rem;
+}
+
+.activity_card_mb {
+  height: 12rem;
+  border: solid 1px #f2f2f2;
+  box-shadow: 5px 5px 5px #f2f2f2;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity_card_mb img {
+  width: 100%;
+  max-height: 9.2rem;
+  object-fit: cover;
+
+}
+
+.activity_card_mb h3 {
   padding-left: 0.5rem;
 }
 
 .activity_card_s {
-  height: 9rem;
+  height: auto;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
   border-radius: 1rem;
@@ -441,9 +469,10 @@ nav li a:hover {
 }
 
 .activity_card_s img {
-  width: 14rem;
-  min-height: 4rem;
+  width: 100%;
+  max-height: 6.9rem;
   object-fit: cover;
+  object-position: top;
 }
 
 .activity_card_s h3 {
