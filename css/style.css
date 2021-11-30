@@ -159,16 +159,21 @@ nav li a:hover {
 }
 
 .filter_btn {
-  width: 11rem;
+ /*  width: 11rem; */
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border: solid 1px #f2f2f2;
   border-radius: 25px;
   overflow: hidden;
 }
 
+.filter_btn i {
+  margin-right: 0.1rem;
+}
+
 .filter_btn button {
-  width: 9rem;
+  /* width: 9rem; */
   height: 2.5rem;
   display: flex;
   justify-content: space-around;
@@ -177,6 +182,7 @@ nav li a:hover {
   background-color: white;
   font-family: "Raleway";
   font-weight: bold;
+  padding-right: 0.7rem;
 }
 
 .filter_btn button:focus {
@@ -200,19 +206,21 @@ nav li a:hover {
   border-radius: 100%;
 }
 
-.filter_btn input {
+/* .filter_btn input {
   max-width: 8rem;
   font-weight: bold;
   border: none;
   padding-left: 13px;
   padding-right: 5px;
-}
+} */
 
 .search_info {
-  max-width: 23rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.search_info p {
+  padding-left: 0.5rem;
 }
 
 .fa-info {
@@ -250,7 +258,7 @@ nav li a:hover {
 
 .bloc_title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -321,7 +329,7 @@ nav li a:hover {
 .popular_card {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 100%;
   height: 26%;
   min-height: 6rem;
   box-shadow: 2px 2px 2px rgb(192, 191, 191);
@@ -386,6 +394,7 @@ nav li a:hover {
   width: 100%;
   min-height: 89%;
   object-fit: cover;
+  object-position: top;
 }
 
 .activity_card_xl h3 {
@@ -489,7 +498,7 @@ footer {
 }
 
 .infos_footer {
-  width: 20%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   margin-left: 2.2rem;
