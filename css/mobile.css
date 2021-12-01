@@ -36,20 +36,33 @@
     }
 
     #search_bar {
-        width: 320px;
+        width:100%;
     }
 
     #search_input {
-        width: 240px;
+        width: 265px;
     }
     
-    #search_Btn {
+    #search_btn {
         width: 40px;
+    }
+
+    .search_info {
+        margin-bottom: 1rem;
     }
 
     #bloc_filters{
         justify-content: column;
         flex-wrap: wrap;
+    }
+
+    .btn_loupe {
+        display: inline;
+        color: white;
+    }
+
+    .btn_txt {
+        display: none;
     }
 
     .filters_btn {
@@ -61,6 +74,7 @@
 
     .filter_btn {
         margin-bottom: 1rem;
+        margin-right: 1rem;
     }
 
     #accomodation_container {
@@ -72,16 +86,43 @@
         width: 100%;
         border-radius: 0px;
         background-color: transparent;
-        padding: 0px;
+        padding: 0 1rem;
+        box-sizing: border-box;
     }
 
     #more_popular {
         width: 100%;
         border-radius: 0px;
-        padding: 1rem;
+        box-sizing: border-box;
+        padding: 1.5rem 1rem 3.5rem 1rem
     }
 
+    #more_popular .more_popular_cards_container{
+        flex-wrap: nowrap;
+    }
 
+    #more_popular .more_popular_cards_container a{
+        min-height: 9rem;
+        box-sizing: border-box;
+    }
+    
+    #more_popular .more_popular_cards_container a img{
+        height: auto;
+        min-height: 9rem;
+    }
+
+    #more_popular .more_popular_cards_container a .popular_cards_infos{
+        padding-right: 2rem;
+    }
+
+    #more_popular .more_popular_cards_container a .popular_cards_infos h3{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #more_popular .more_popular_cards_container a .popular_cards_infos div p{
+        font-size: 0.85rem;
+    }
 
     .bloc_title{
         justify-content: space-between;
@@ -93,6 +134,10 @@
     }
 
     .accomodation_card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .accomodation_card img {
         width: 100%;
     }
 
@@ -119,18 +164,11 @@
         height: 15rem;
     }
 
-    .activity_card_l img {
-
-    }
-
     .activity_card_ma{
         width: 100%;
         height: 15rem;
     }
 
-    .activity_card_ma img {
-        
-    }
 
     .activity_card_mb{
         width: 100%;
@@ -142,4 +180,37 @@
         height: 15rem;
     }
 
+    #activity{
+        margin: 1rem;
+    }
+    #activity_cards_container{
+        width: 100%;
+    }
+
+    #activity #activity_cards_container .activity_cards_bloc .card_mobile {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        box-shadow: 2px 2px 2px rgb(192, 191, 191);
+        margin: 0.5rem 0rem;
+        background-color: white;
+        border-radius: 10px;
+        justify-content: space-between;
+      }
+      
+      #activity #activity_cards_container .activity_cards_bloc .card_mobile img {
+        height: 75%;
+        min-height: 0;
+        max-height: 10rem;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      #activity #activity_cards_container .activity_cards_bloc .activity_card_ma img {
+          object-position: top;
+      }
 }

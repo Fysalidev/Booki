@@ -135,13 +135,17 @@ nav li a:hover {
   font-weight: bold;
 }
 
-#search_Btn {
+#search_btn {
   width: 143px;
   height: 40px;
   border: none;
   background-color: #0065fc;
   color: white;
   font-size: 0.9em;
+}
+
+.btn_loupe {
+  display: none;
 }
 
 /* SEARCH - Filters */
@@ -226,7 +230,7 @@ nav li a:hover {
 .fa-info {
   width: 1.2rem;
   height: 1.2rem;
-  color: #006#5fc;
+  color: #0065fc;
   font-size: 0.6rem;
   border-radius: 100vh;
   border: solid 2px #f2f2f2;
