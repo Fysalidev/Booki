@@ -1,8 +1,12 @@
 @media screen and (max-width: 768px) {
   
     #bloc_page {
-        width: 100%;
+        width: 375px;
         margin: 0px;
+    }
+
+    main {
+        margin: 0rem;
     }
 
     header {
@@ -26,6 +30,9 @@
     header nav ul li {
         width: 50%;
         padding: 0px;
+    }
+    #search {
+        padding-left: 1rem;
     }
 
     #search_bar {
@@ -71,8 +78,10 @@
     #more_popular {
         width: 100%;
         border-radius: 0px;
-        padding: 0px;
+        padding: 1rem;
     }
+
+
 
     .bloc_title{
         justify-content: space-between;
