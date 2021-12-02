@@ -64,16 +64,12 @@ header {
   margin: 0 2rem;
 }
 
-/* #top a {
-
-} */
-
 #logo {
   width: 96px;
   height: 45px;
 }
 
-/* Navigation */
+/* HEADER - Navigation */
 nav ul {
   display: flex;
 }
