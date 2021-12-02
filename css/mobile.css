@@ -23,6 +23,7 @@
 
     nav li a:hover {
         color: #0065fc;
+        border-top: none;
         border-bottom: solid 1px;
     }
 
