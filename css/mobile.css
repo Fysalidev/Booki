@@ -21,7 +21,7 @@
         width:100%; 
     }
 
-    nav li a:active {
+    nav li a:hover {
         color: #0065fc;
         border-bottom: solid 1px;
     }
