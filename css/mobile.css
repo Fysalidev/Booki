@@ -231,8 +231,34 @@
         width: auto;
         margin-left: 1rem;
     }
-      
-    
+          
+}
 
-      
+@media screen and (min-width: 779px) and (max-width: 992px){
+    #bloc_page {
+        width: auto;
+    }
+
+    #accomodation_container{
+        flex-direction: column-reverse;
+    }
+
+    #accomodation_at {
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+
+    #more_popular {
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+
+    .more_popular_cards_container {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .popular_card {
+        width: 28%;
+    }
 }
