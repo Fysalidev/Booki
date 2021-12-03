@@ -130,7 +130,7 @@ nav li a:hover {
 }
 
 #search_btn {
-  width: 143px;
+  width: 145px;
   height: 40px;
   border: none;
   background-color: #0065fc;
@@ -157,7 +157,6 @@ nav li a:hover {
 }
 
 .filter_btn {
- /*  width: 11rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -188,7 +187,7 @@ nav li a:hover {
   background-color: #0065fc;
 }
 
-.filter_btn button:hover{
+.filter_btn button:hover {
   color: white;
   background-color:#0065fc;
 }
@@ -203,14 +202,6 @@ nav li a:hover {
   background-color: #deebff;
   border-radius: 100%;
 }
-
-/* .filter_btn input {
-  max-width: 8rem;
-  font-weight: bold;
-  border: none;
-  padding-left: 13px;
-  padding-right: 5px;
-} */
 
 .search_info {
   display: flex;
@@ -273,7 +264,7 @@ nav li a:hover {
   flex-direction: column;
   width: 30%;
   min-height: 9rem;
-  box-shadow: 2px 2px 2px rgb(192, 191, 191);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 19%);
   margin: 0.5rem 0rem;
   background-color: white;
   border-radius: 10px;
@@ -339,7 +330,7 @@ nav li a:hover {
 
 .popular_card img {
   max-height: 7rem;
-  width: 40%;
+  width: 42.67%;
   object-fit: cover;
   border-radius: 10px 0px 0 10px;
 }

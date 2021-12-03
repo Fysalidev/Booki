@@ -41,6 +41,7 @@
     header nav ul li a {
         display: block;
         border-bottom: solid 2px #f2f2f2;
+        padding: 0px 15px 15px 15px;
     }
 
     nav li a:hover {
@@ -71,7 +72,11 @@
     }
 
     .search_info {
+        align-items: center;
         margin: 0rem 1rem 1rem 0rem
+    }
+    .search_info p {
+        /* Voir si on peut aligner le i et le p */
     }
 
     #bloc_filters{
@@ -92,7 +97,7 @@
     .filters_btn {
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: flex-start;
+        margin-right: 1rem;
     }
 
     .filter_btn {
@@ -120,30 +125,32 @@
         padding: 1.5rem 1rem 3.5rem 1rem
     }
 
-    #more_popular .more_popular_cards_container{
+    #more_popular .more_popular_cards_container {
         flex-wrap: nowrap;
     }
 
-    #more_popular .more_popular_cards_container a{
+    #more_popular .more_popular_cards_container a {
         min-height: 9rem;
+        max-width: 30rem;
         box-sizing: border-box;
     }
     
-    #more_popular .more_popular_cards_container a img{
-        height: auto;
-        min-height: 9rem;
+    #more_popular .more_popular_cards_container a img {
+        max-height: 100%;
+        max-width: 100%
     }
 
-    #more_popular .more_popular_cards_container a .popular_cards_infos{
+    #more_popular .more_popular_cards_container a .popular_cards_infos {
         padding-right: 2rem;
+        width: 60%
     }
 
-    #more_popular .more_popular_cards_container a .popular_cards_infos h3{
+    #more_popular .more_popular_cards_container a .popular_cards_infos h3 {
         font-size: 1rem;
         margin-bottom: 0.5rem;
     }
 
-    #more_popular .more_popular_cards_container a .popular_cards_infos div p{
+    #more_popular .more_popular_cards_container a .popular_cards_infos div p {
         font-size: 0.85rem;
     }
 
@@ -247,7 +254,7 @@
           
 }
 
-@media screen and (min-width: 779px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 992px){
     #bloc_page {
         width: auto;
     }
@@ -275,6 +282,17 @@
     .popular_card {
         width: 30%;
     }
+
+    #activity_cards_container {
+
+    }
+
+    .activity_cards_bloc {
+      /*  margin-left: 5rem; */
+    }
+
+
+
 
 
 }
