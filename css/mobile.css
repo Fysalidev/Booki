@@ -75,8 +75,9 @@
         align-items: center;
         margin: 0rem 1rem 1rem 0rem
     }
+
     .search_info p {
-        /* Voir si on peut aligner le i et le p */
+        margin : 1rem;
     }
 
     #bloc_filters{
@@ -97,7 +98,7 @@
     .filters_btn {
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-right: 1rem;
+        margin-right: 2.3rem;
     }
 
     .filter_btn {
@@ -118,6 +119,13 @@
         box-sizing: border-box;
     }
 
+    .accomodation_cards_container a {
+        min-height: 7rem;
+        min-width: 20rem;
+        max-width: 30rem;
+        box-sizing: border-box;
+    }
+
     #more_popular {
         width: 100%;
         border-radius: 0px;
@@ -127,6 +135,7 @@
 
     #more_popular .more_popular_cards_container {
         flex-wrap: nowrap;
+        align-items: flex-start;
     }
 
     #more_popular .more_popular_cards_container a {
@@ -137,8 +146,6 @@
     }
     
     #more_popular .more_popular_cards_container a img {
-/*         max-height: 100%;
-        max-width: 100% */
         width: 7rem;
         height: 7rem;
     }
@@ -171,6 +178,7 @@
         width: 100%;
         box-sizing: border-box;
     }
+
     .accomodation_card img {
         width: 100%;
     }
@@ -178,6 +186,7 @@
     #activity_cards_container {
         flex-direction: column;
     }
+
     .activity_cards_bloc{
         width: 100%;
         margin-bottom: 0.1rem;
@@ -201,7 +210,6 @@
         height: 15rem;
     }
 
-
     .activity_card_mb {
         width: 100%;
         height: 15rem;
@@ -215,6 +223,7 @@
     #activity{
         margin: 1rem;
     }
+
     #activity_cards_container {
         width: 100%;
     }
@@ -284,19 +293,11 @@
     }
 
     .popular_card {
-        width: 30%;
+        max-width: 20rem;
+        min-width: 20rem;
     }
 
-    #activity_cards_container {
-
+    .popular_card img {
+        height: 7rem;
     }
-
-    .activity_cards_bloc {
-      /*  margin-left: 5rem; */
-    }
-
-
-
-
-
 }
