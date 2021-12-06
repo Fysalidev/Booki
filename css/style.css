@@ -369,8 +369,6 @@ nav li a:hover {
 }
 
 .activity_cards_bloc {
-  width: 17rem;
-  /* height: 25rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -378,6 +376,7 @@ nav li a:hover {
 }
 
 .activity_card_xl {
+  width: 17rem;
   height: 24.9rem;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
@@ -397,6 +396,7 @@ nav li a:hover {
 }
 
 .activity_card_l {
+  width: 17rem;
   height : auto;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
@@ -418,6 +418,7 @@ nav li a:hover {
 }
 
 .activity_card_ma {
+  width: 17rem;
   height: 10rem;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
@@ -440,6 +441,7 @@ nav li a:hover {
 }
 
 .activity_card_mb {
+  width: 17rem;
   height: 12rem;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
@@ -462,6 +464,7 @@ nav li a:hover {
 }
 
 .activity_card_s {
+  width: 17rem;
   height: auto;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
