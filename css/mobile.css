@@ -225,7 +225,7 @@
     }
 
     #activity_cards_container {
-        width: 100%;
+        min-width: 100%;
     }
 
     #activity #activity_cards_container .activity_cards_bloc .card_mobile {
@@ -267,37 +267,3 @@
           
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-    #bloc_page {
-        width: auto;
-    }
-
-    #accomodation_container {
-        width: 95%;
-        flex-direction: column-reverse;
-    }
-
-    #accomodation_at {
-        width: 100%;
-        margin: 1rem 0rem;
-    }
-
-    #more_popular {
-        width: 100%;
-        margin: 1rem 0rem;
-    }
-
-    .more_popular_cards_container {
-        width: 100%;
-        flex-direction: row;
-    }
-
-    .popular_card {
-        max-width: 20rem;
-        min-width: 20rem;
-    }
-
-    .popular_card img {
-        height: 7rem;
-    }
-}

@@ -5,7 +5,7 @@ body {
 }
 
 #bloc_page {
-  width: 1280px;
+  max-width: 1280px;
   margin: auto;
 }
 
@@ -47,10 +47,12 @@ p {
 
 .blue-star {
   color: #0065fc;
+  font-size: 0.6rem;
 }
 
 .gray-star {
   color: #e3e3e3;
+  font-size: 0.6rem;
 }
 
 .price{
@@ -170,7 +172,6 @@ nav li a:hover {
 }
 
 .filter_btn button {
-  /* width: 9rem; */
   height: 2.5rem;
   display: flex;
   justify-content: space-around;
@@ -318,7 +319,7 @@ nav li a:hover {
 
 .popular_card {
   width: 100%;
-  height: 26%;
+  height: 8rem;
   min-height: 6rem;
   margin: 0.6rem 0;
   border: solid 0.2rem white;
@@ -330,19 +331,14 @@ nav li a:hover {
 }
 
 .popular_card img {
-  /* max-height: 7rem; */
-  /* width: 42.67%; */
-  /* width: 50%; */
-  width: 7rem;
-  height: 100%;
+  width: 8rem;
   object-fit: cover;
   object-position: center;
   border-radius: 10px 0px 0 10px;
 }
 
 .popular_cards_infos {
-  padding: 0.5rem;
-  margin-right: 2.3rem;
+  padding: 0.5rem 1.8rem 0.5rem 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -362,13 +358,15 @@ nav li a:hover {
 /* ACTIVITY */
 
 #activity_cards_container {
+  
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 2rem;
 }
 
 .activity_cards_bloc {
+  width: 23%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -376,7 +374,6 @@ nav li a:hover {
 }
 
 .activity_card_xl {
-  width: 17rem;
   height: 24.9rem;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
@@ -393,10 +390,10 @@ nav li a:hover {
 
 .activity_card_xl h3 {
   padding-left: 0.5rem;
+  margin: none;
 }
 
 .activity_card_l {
-  width: 17rem;
   height : auto;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
@@ -418,7 +415,6 @@ nav li a:hover {
 }
 
 .activity_card_ma {
-  width: 17rem;
   height: 10rem;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
@@ -441,7 +437,6 @@ nav li a:hover {
 }
 
 .activity_card_mb {
-  width: 17rem;
   height: 12rem;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
@@ -464,7 +459,6 @@ nav li a:hover {
 }
 
 .activity_card_s {
-  width: 17rem;
   height: auto;
   border: solid 1px #f2f2f2;
   box-shadow: 5px 5px 5px #f2f2f2;
@@ -476,7 +470,6 @@ nav li a:hover {
 }
 
 .activity_card_s img {
-  width: 100%;
   max-height: 6.9rem;
   object-fit: cover;
   object-position: top;
