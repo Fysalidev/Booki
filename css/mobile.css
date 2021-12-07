@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   
     #bloc_page {
         min-width: 320px;

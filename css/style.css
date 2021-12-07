@@ -129,6 +129,7 @@ nav li a:hover {
   padding-left: 10px;
   color: black;
   font-weight: bold;
+  background-color: transparent;
 }
 
 #search_input:focus {
