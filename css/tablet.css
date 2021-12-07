@@ -25,13 +25,13 @@
 
     .popular_card {
         width: 31%;
-        min-width: 13.5rem;
+        min-width: 13rem;
         height: 8rem;
     }
     
     .popular_card img {
         width: 8rem;
-        height: 8rem;
+        /* height: 8rem; */
     }
 
     .popular_cards_infos {
@@ -41,45 +41,8 @@
     .activity_cards_bloc {
         min-width: 11rem;
     }
-
-}
-/* TEST */
-
-    /* #activity_cards_container {
-        justify-content: flex-start;
-        flex-wrap: wrap;
-
-    }
-
-    .activity_cards_bloc {
-        width: 50%;
-        flex-direction: row;
-    }
-
-    #activity #activity_cards_container .activity_cards_bloc .card_mobile {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        width: 18rem;
-        height: 12rem;
-        box-shadow: 2px 2px 2px rgb(192, 191, 191);
-        margin: 0.5rem 0rem;
-        background-color: white;
-        border-radius: 10px;
-        justify-content: space-between;
-        margin-right: 3rem;
-    }
     
-    #activity #activity_cards_container .activity_cards_bloc .card_mobile img {
-        height: 75%;
-        min-height: 0;
-        max-height: 10rem;
-        width: 100%;
-        border-radius: 10px 10px 0 0;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    #activity #activity_cards_container .activity_cards_bloc .activity_card_ma img {
-        object-position: top;
-    } */
+    .activity_cards_bloc .activity_card_xl h3, .activity_cards_bloc .activity_card_ma h3 {
+        margin-top: 0.2rem
+      }
+}

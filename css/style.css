@@ -131,6 +131,10 @@ nav li a:hover {
   font-weight: bold;
 }
 
+#search_input:focus {
+  outline: none;
+}
+
 #search_btn {
   width: 145px;
   height: 40px;
@@ -275,7 +279,7 @@ nav li a:hover {
 }
 
 .accomodation_card img {
-  max-height: 7rem;
+  height: 7rem;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
@@ -388,10 +392,9 @@ nav li a:hover {
   object-position: top;
 }
 
-.activity_card_xl h3 {
+/* .activity_card_xl h3 {
   padding-left: 0.5rem;
-  margin: none;
-}
+} */
 
 .activity_card_l {
   height : auto;
@@ -410,9 +413,9 @@ nav li a:hover {
   object-position: center;
 }
 
-.activity_card_l h3 {
+/* .activity_card_l h3 {
   padding-left: 0.5rem;
-}
+} */
 
 .activity_card_ma {
   height: 10rem;
@@ -432,9 +435,9 @@ nav li a:hover {
   object-position: top;
 }
 
-.activity_card_ma h3 {
+/* .activity_card_ma h3 {
   padding-left: 0.5rem;
-}
+} */
 
 .activity_card_mb {
   height: 12rem;
@@ -449,14 +452,14 @@ nav li a:hover {
 
 .activity_card_mb img {
   width: 100%;
-  max-height: 9.2rem;
+  height: 9.2rem;
   object-fit: cover;
 
 }
-
+/* 
 .activity_card_mb h3 {
   padding-left: 0.5rem;
-}
+} */
 
 .activity_card_s {
   height: auto;
@@ -475,8 +478,17 @@ nav li a:hover {
   object-position: top;
 }
 
-.activity_card_s h3 {
+/* .activity_card_s h3 {
   padding-left: 0.5rem;
+} */
+
+.activity_cards_bloc .card_mobile{
+  margin: 0.5rem
+}
+
+.activity_cards_bloc .card_mobile h3{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem
 }
 
 /* FOOTER */

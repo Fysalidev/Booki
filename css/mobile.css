@@ -1,6 +1,8 @@
-@media screen and (orientation:portrait) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
     #bloc_page {
+        min-width: 320px;
+        max-width: 500px;
         width: auto;
         margin: auto;
     }
@@ -121,7 +123,7 @@
 
     .accomodation_cards_container a {
         min-height: 7rem;
-        min-width: 20rem;
+        min-width: 18rem;
         max-width: 30rem;
         box-sizing: border-box;
     }
@@ -140,14 +142,14 @@
 
     #more_popular .more_popular_cards_container a {
         min-height: 7rem;
-        min-width: 20rem;
+        min-width: 18rem;
         max-width: 30rem;
         box-sizing: border-box;
     }
     
     #more_popular .more_popular_cards_container a img {
         width: 7rem;
-        height: 7rem;
+        /* height: 7rem; */
     }
 
     #more_popular .more_popular_cards_container a .popular_cards_infos {
@@ -266,4 +268,3 @@
     }
           
 }
-
