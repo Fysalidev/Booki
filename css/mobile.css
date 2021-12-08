@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (orientation:portrait) and (max-width: 767px) {
   
     #bloc_page {
         /* min-width: 320px; */
