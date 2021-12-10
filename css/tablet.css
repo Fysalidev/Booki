@@ -1,4 +1,4 @@
-@media screen and (min-width:769px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) , (position:landscape) {
     
     #bloc_page {
         width: auto;
