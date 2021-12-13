@@ -11,12 +11,12 @@
 
     #accomodation_at {
         width: 100%;
-        margin: 1rem 0rem;
+        margin: 16px 0px;
     }
 
     #more_popular {
         width: 100%;
-        margin: 1rem 0rem;
+        margin: 16px 0px;
     }
 
     .more_popular_cards_container {
@@ -26,24 +26,23 @@
 
     .popular_card {
         width: 31%;
-        min-width: 13rem;
-        height: 8rem;
+        min-width: 208px;
+        height: 128px;
     }
     
     .popular_card img {
-        width: 8rem;
-        /* height: 8rem; */
+        width: 128px;
     }
 
     .popular_cards_infos {
-        padding: 0.5rem 0rem 0.5rem 0.5rem;
+        padding: 8px 0px 8px 8px;
     }
 
     .activity_cards_bloc {
-        min-width: 11rem;
+        min-width: 176px;
     }
     
     .activity_cards_bloc .activity_card_xl h3, .activity_cards_bloc .activity_card_ma h3 {
-        margin-top: 0.2rem
+        margin-top: 3.2px;
     }
 }
