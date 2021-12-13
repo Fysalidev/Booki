@@ -145,8 +145,6 @@ nav li a:hover {
   display: none;
 }
 
-/* SEARCH - Filters */
-
 #bloc_filters {
   display: flex;
   align-items: center;
@@ -255,7 +253,7 @@ nav li a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 16 px 0px;
+  margin: 16px 0px;
 }
 
 .accomodation_card {
