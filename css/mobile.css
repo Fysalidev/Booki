@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
 
     main {
         margin: 0px;
@@ -115,7 +115,7 @@
     .accomodation_cards_container a {
         min-height: 112px;
         min-width: 288px;
-        max-width: 480px;
+        /* max-width: 480px; */
         box-sizing: border-box;
     }
 
@@ -134,7 +134,7 @@
     #more_popular .more_popular_cards_container a {
         min-height: 112px;
         min-width: 288px;
-        max-width: 480px;
+        /* max-width: 480px; */
         box-sizing: border-box;
     }
 
