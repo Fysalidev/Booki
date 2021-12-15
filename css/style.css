@@ -182,14 +182,14 @@ nav li a:hover {
   padding-right: 11.2px;
 }
 
-.filter_btn button:focus {
-  color: white;
-  background-color: #0065fc;
-}
-
 .filter_btn button:hover {
   color: white;
   background-color:#0065fc;
+}
+
+.filter_btn button:focus {
+  color: white;
+  background-color: #0065fc;
 }
 
 .filter_btn i {
